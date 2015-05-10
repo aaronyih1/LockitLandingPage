@@ -17,6 +17,9 @@ var ListStyle={
 var LinkStyle={
 	textDecoration:"none"
 }
+var LinkStyle:hover={
+	
+}
 var Header = React.createClass({displayName: "Header",
 	render: function(){
 		return(

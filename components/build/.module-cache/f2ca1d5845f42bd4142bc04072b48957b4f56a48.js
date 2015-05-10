@@ -17,6 +17,9 @@ var ListStyle={
 var LinkStyle={
 	textDecoration:"none"
 }
+var LinkStyle:active ={
+	color: "red"
+}
 var Header = React.createClass({displayName: "Header",
 	render: function(){
 		return(

@@ -7,15 +7,12 @@ var UnorderedListStyle = {
 	display:"inline-block",
 	whiteSpace: "nowrap",
 	float: "right",
-	marginTop: 35
+	marginTop: 40
 }
 var ListStyle={
 	display: "inline",
 	listStyleType:"none",
 	marginRight: 20
-}
-var LinkStyle={
-	textDecoration:"none"
 }
 var Header = React.createClass({displayName: "Header",
 	render: function(){
@@ -23,10 +20,10 @@ var Header = React.createClass({displayName: "Header",
 			React.createElement("header", {role: "banner"}, 
 				React.createElement("object", {data: "imgs/lockitlogo.svg", type: "image/svg+xml", id: "logo", style: LogoStyle}), 
 				React.createElement("ul", {style: UnorderedListStyle}, 
-					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: "", style: LinkStyle}, "what it is")), 
-					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: "", style: LinkStyle}, "how to use it")), 
-					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: "", style: LinkStyle}, "features")), 
-					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: "", style: LinkStyle}, "drop us a line"))
+					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: ""}, "what it is")), 
+					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: ""}, "how to use it")), 
+					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: ""}, "features")), 
+					React.createElement("li", {style: ListStyle}, React.createElement("a", {href: ""}, "drop us a line"))
 				)
 			)
 		);

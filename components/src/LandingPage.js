@@ -1,13 +1,32 @@
+var LogoStyle ={
+	width: 100,
+	marginTop: 20,
+	marginLeft: 30,
+}
+var UnorderedListStyle = {
+	display:"inline-block",
+	whiteSpace: "nowrap",
+	float: "right",
+	marginTop: 35
+}
+var ListStyle={
+	display: "inline",
+	listStyleType:"none",
+	marginRight: 20
+}
+var LinkStyle={
+	textDecoration:"none"
+}
 var Header = React.createClass({
 	render: function(){
 		return(
 			<header role="banner">
-				<object data="imgs/lockitlogo.svg" type="image/svg+xml" id="logo"></object>
-				<ul>
-					<li><a href="">what it is</a></li>
-					<li><a href="">how to use it</a></li>
-					<li><a href="">features</a></li>
-					<li><a href="">drop us a line</a></li>
+				<object data="imgs/lockitlogo.svg" type="image/svg+xml" id="logo" style={LogoStyle}></object>
+				<ul style ={UnorderedListStyle}>
+					<li style={ListStyle}><a href="" style={LinkStyle}>what it is</a></li>
+					<li style={ListStyle}><a href="" style={LinkStyle}>how to use it</a></li>
+					<li style={ListStyle}><a href="" style={LinkStyle}>features</a></li>
+					<li style={ListStyle}><a href="" style={LinkStyle}>drop us a line</a></li>
 				</ul>
 			</header>
 		);
