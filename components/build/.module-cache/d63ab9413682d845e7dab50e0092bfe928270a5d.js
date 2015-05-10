@@ -90,10 +90,6 @@ var Footer = React.createClass({displayName: "Footer",
 					React.createElement("li", null, React.createElement("a", {href: ""}, "how to use it")), 
 					React.createElement("li", null, React.createElement("a", {href: ""}, "features")), 
 					React.createElement("li", null, React.createElement("a", {href: ""}, "drop us a line"))
-				), 
-				React.createElement("form", {method: "post"}, 
-					React.createElement("input", {type: "text", name: "email"}), 
-					React.createElement("input", {type: "submit", value: "request"})
 				)
 			)
 		);
@@ -109,8 +105,7 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 				React.createElement(TitleContent, null), 
 				React.createElement(WhatItIs, null), 
 				React.createElement(HowToUseIt, null), 
-				React.createElement(Features, null), 
-				React.createElement(Footer, null)
+				React.createElement(Features, null)
 			)
 			);
 	}

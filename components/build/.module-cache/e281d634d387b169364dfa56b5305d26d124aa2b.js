@@ -90,11 +90,8 @@ var Footer = React.createClass({displayName: "Footer",
 					React.createElement("li", null, React.createElement("a", {href: ""}, "how to use it")), 
 					React.createElement("li", null, React.createElement("a", {href: ""}, "features")), 
 					React.createElement("li", null, React.createElement("a", {href: ""}, "drop us a line"))
-				), 
-				React.createElement("form", {method: "post"}, 
-					React.createElement("input", {type: "text", name: "email"}), 
-					React.createElement("input", {type: "submit", value: "request"})
 				)
+
 			)
 		);
 	}

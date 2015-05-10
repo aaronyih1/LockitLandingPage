@@ -69,31 +69,13 @@ var Features = React.createClass({displayName: "Features",
 			React.createElement("section", null, 
 				React.createElement("table", null, 
 					React.createElement("tr", null, 
-						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "safe and sound"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor debitis autem mollitia beatae deleniti earum eius nobis! Sunt, tenetur. Expedita, omnis minima dolorum dolor tenetur cupiditate architecto similique culpa!")), 
-						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "something 4"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor debitis autem mollitia beatae deleniti earum eius nobis! Sunt, tenetur. Expedita, omnis minima dolorum dolor tenetur cupiditate architecto similique culpa!"))
+						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "safe and sound")), 
+						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "something 4"))
 					), 
 					React.createElement("tr", null, 
-						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "effective search bar"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor debitis autem mollitia beatae deleniti earum eius nobis! Sunt, tenetur. Expedita, omnis minima dolorum dolor tenetur cupiditate architecto similique culpa!")), 
-						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "effective search bar"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor debitis autem mollitia beatae deleniti earum eius nobis! Sunt, tenetur. Expedita, omnis minima dolorum dolor tenetur cupiditate architecto similique culpa!"))
+						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "effective search bar")), 
+						React.createElement("td", null, React.createElement("img", {src: ""}), React.createElement("h3", null, "effective search bar"))
 					)
-				)
-			)
-		);
-	}
-});
-var Footer = React.createClass({displayName: "Footer",
-	render: function(){
-		return(
-			React.createElement("footer", null, 
-				React.createElement("ul", null, 
-					React.createElement("li", null, React.createElement("a", {href: ""}, "what it is")), 
-					React.createElement("li", null, React.createElement("a", {href: ""}, "how to use it")), 
-					React.createElement("li", null, React.createElement("a", {href: ""}, "features")), 
-					React.createElement("li", null, React.createElement("a", {href: ""}, "drop us a line"))
-				), 
-				React.createElement("form", {method: "post"}, 
-					React.createElement("input", {type: "text", name: "email"}), 
-					React.createElement("input", {type: "submit", value: "request"})
 				)
 			)
 		);
@@ -109,8 +91,7 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 				React.createElement(TitleContent, null), 
 				React.createElement(WhatItIs, null), 
 				React.createElement(HowToUseIt, null), 
-				React.createElement(Features, null), 
-				React.createElement(Footer, null)
+				React.createElement(Features, null)
 			)
 			);
 	}
