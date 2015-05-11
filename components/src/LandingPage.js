@@ -1,21 +1,61 @@
 var LogoStyle ={
 	width: 100,
-	marginTop: 20,
+	marginTop: 10,
 	marginLeft: 30,
 }
 var UnorderedListStyle = {
-	display:"inline-block",
-	whiteSpace: "nowrap",
-	float: "right",
-	marginTop: 35
+		display:"inline-block",
+		whiteSpace: "nowrap",
+		float: "right",
+		marginTop: 20
 }
-var ListStyle={
+var ListStyle = {
 	display: "inline",
 	listStyleType:"none",
 	marginRight: 20
 }
 var LinkStyle={
 	textDecoration:"none"
+}
+var BackgroundStyle={
+	backgroundImage: "url(https://download.unsplash.com/photo-1414073875831-b47709631146)",
+	backgroundRepeat: "norepeat",
+	backgroundPosition: "-40em -68em",
+	width:"100vw",
+	height: 300,
+	WebkitFilter: "contrast(1.1) saturate(1.8) blur(4px)",
+    MozFilter:  "contrast(1.1) saturate(1.8) blur(4px)",
+    OFilter: "contrast(1.1) saturate(1.8) blur(4px)",
+    msFilter: "contrast(1.1) saturate(1.8) blur(4px)",
+    filter: "contrast(1.1) saturate(1.8) blur(4px)",
+    opacity: "1",
+    margin:0
+}
+var MatteStyle= {
+	background: "rgba(103,86,70,0.37)",
+	position:"absolute",
+	top:110,
+	right:100,
+	height: 200,
+	width:300,
+	borderRadius: 5
+}
+var TitleStyle={
+	display:"inline-block",
+	fontFamily:"myriad pro",
+	textAlign:"right",
+	marginLeft:15
+}
+var SignUpStyle={
+	marginLeft:80
+}
+var InputStyle={
+	background:"transparent",
+	border: "1.5px solid black",
+	borderRadius: 4
+}
+var HowToUseItStyle={
+	background: "lightgrey"
 }
 var Header = React.createClass({
 	render: function(){
@@ -35,18 +75,18 @@ var Header = React.createClass({
 var BackgroundImage = React.createClass({
 	render: function(){
 		return(
-			<div></div>
+			<div style={BackgroundStyle}></div>
 		);
 	}
 });
 var TitleContent = React.createClass({
 	render: function(){
 		return(
-			<div>
-				<h1>Save and Organize your thoughts and ideas on the CLOUD </h1>
-				<form method="post">
-					<input type="text" name = "email" /> 
-					<input type="submit" value="request" />
+			<div style={MatteStyle}>
+				<h1 style={TitleStyle}>Save and Organize <br/> your thoughts on <br/>the CLOUD </h1>
+				<form method="post" style={SignUpStyle}>
+					<input style={InputStyle} type="text" name = "email" /> 
+					<input style={InputStyle} type="submit" value="request" />
 				</form>
 			</div>
 		);
@@ -55,7 +95,7 @@ var TitleContent = React.createClass({
 var WhatItIs = React.createClass({
 	render: function(){
 		return(
-			<section>
+			<section >
 				<div><img src=""/></div>
 				<p>Lockit is a mobile and web app couple that together helps you manage your thoughts and ideas</p>
 			</section>
@@ -66,7 +106,7 @@ var WhatItIs = React.createClass({
 var HowToUseIt = React.createClass({
 	render: function(){
 		return(
-			<section>
+			<section style={HowToUseItStyle}>
 				<table>
 					<tr>
 						<td><img src=""/></td>
