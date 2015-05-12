@@ -44,10 +44,16 @@ var TitleStyle={
 	display:"inline-block",
 	fontFamily:"myriad pro",
 	textAlign:"right",
-	marginLeft:15
+	marginLeft:15,
+	position:"absolute",
+	top:110,
+	right:100
 }
 var SignUpStyle={
-	marginLeft:80
+	marginLeft:80,
+	position:"absolute",
+	top:250,
+	right:100
 }
 var InputStyle={
 	background:"transparent",
@@ -82,8 +88,8 @@ var BackgroundImage = React.createClass({
 var TitleContent = React.createClass({
 	render: function(){
 		return(
-			<div style={MatteStyle}>
-				<h1 style={TitleStyle}>Save and Organize <br/> your thoughts on <br/>the CLOUD </h1>
+			<div>
+				<h1 style={TitleStyle}>Save and Organize <br/> your thoughts on <br/>the cloud </h1>
 				<form method="post" style={SignUpStyle}>
 					<input style={InputStyle} type="text" name = "email" /> 
 					<input style={InputStyle} type="submit" value="request" />

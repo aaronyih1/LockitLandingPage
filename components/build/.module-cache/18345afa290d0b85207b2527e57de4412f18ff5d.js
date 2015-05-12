@@ -61,9 +61,7 @@ var InputStyle={
 	borderRadius: 4
 }
 var HowToUseItStyle={
-	background: "lightgrey",
-	paddingLeft: 10,
-	paddingRight: 10
+	background: "lightgrey"
 }
 var Header = React.createClass({displayName: "Header",
 	render: function(){

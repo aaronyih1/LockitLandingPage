@@ -1,7 +1,7 @@
 var LogoStyle ={
 	width: 100,
 	marginTop: 10,
-	marginLeft: 30,
+	marginLeft: 30
 }
 var UnorderedListStyle = {
 		display:"inline-block",
@@ -44,26 +44,18 @@ var TitleStyle={
 	display:"inline-block",
 	fontFamily:"myriad pro",
 	textAlign:"right",
-	marginLeft:15,
-	position:"absolute",
-	top:110,
-	right:100
+	marginLeft:15
 }
 var SignUpStyle={
-	marginLeft:80,
-	position:"absolute",
-	top:250,
-	right:100
+	marginLeft:80
 }
 var InputStyle={
 	background:"transparent",
 	border: "1.5px solid black",
 	borderRadius: 4
 }
-var HowToUseItStyle={
-	background: "lightgrey",
-	paddingLeft: 10,
-	paddingRight: 10
+var HowToUseStyle={
+	background: "lightgrey"
 }
 var Header = React.createClass({displayName: "Header",
 	render: function(){
@@ -90,8 +82,8 @@ var BackgroundImage = React.createClass({displayName: "BackgroundImage",
 var TitleContent = React.createClass({displayName: "TitleContent",
 	render: function(){
 		return(
-			React.createElement("div", null, 
-				React.createElement("h1", {style: TitleStyle}, "Save and Organize ", React.createElement("br", null), " your thoughts on ", React.createElement("br", null), "the cloud "), 
+			React.createElement("div", {style: MatteStyle}, 
+				React.createElement("h1", {style: TitleStyle}, "Save and Organize ", React.createElement("br", null), " your thoughts on ", React.createElement("br", null), "the CLOUD "), 
 				React.createElement("form", {method: "post", style: SignUpStyle}, 
 					React.createElement("input", {style: InputStyle, type: "text", name: "email"}), 
 					React.createElement("input", {style: InputStyle, type: "submit", value: "request"})
@@ -183,4 +175,4 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 	}
 });
 
-React.render(React.createElement(LandingPage, null), document.getElementById('landingPage'));
+React.render(React.createElement(LandingPage, null), document.getElementById('content'));

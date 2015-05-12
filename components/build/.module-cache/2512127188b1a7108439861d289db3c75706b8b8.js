@@ -21,7 +21,7 @@ var BackgroundStyle={
 	backgroundImage: "url(https://download.unsplash.com/photo-1414073875831-b47709631146)",
 	backgroundRepeat: "norepeat",
 	backgroundPosition: "-40em -68em",
-	width:"100vw",
+	width:900,
 	height: 300,
 	WebkitFilter: "contrast(1.1) saturate(1.8) blur(4px)",
     MozFilter:  "contrast(1.1) saturate(1.8) blur(4px)",
@@ -61,9 +61,7 @@ var InputStyle={
 	borderRadius: 4
 }
 var HowToUseItStyle={
-	background: "lightgrey",
-	paddingLeft: 10,
-	paddingRight: 10
+	background: "lightgrey"
 }
 var Header = React.createClass({displayName: "Header",
 	render: function(){
@@ -91,7 +89,7 @@ var TitleContent = React.createClass({displayName: "TitleContent",
 	render: function(){
 		return(
 			React.createElement("div", null, 
-				React.createElement("h1", {style: TitleStyle}, "Save and Organize ", React.createElement("br", null), " your thoughts on ", React.createElement("br", null), "the cloud "), 
+				React.createElement("h1", {style: TitleStyle}, "Save and Organize ", React.createElement("br", null), " your thoughts on ", React.createElement("br", null), "the CLOUD "), 
 				React.createElement("form", {method: "post", style: SignUpStyle}, 
 					React.createElement("input", {style: InputStyle, type: "text", name: "email"}), 
 					React.createElement("input", {style: InputStyle, type: "submit", value: "request"})
