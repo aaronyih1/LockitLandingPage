@@ -102,7 +102,7 @@ var WhatItIs = React.createClass({displayName: "WhatItIs",
 	render: function(){
 		return(
 			React.createElement("section", null, 
-				React.createElement("div", null, React.createElement("img", {src: "https://download.unsplash.com/photo-1430132594682-16e1185b17c5"})), 
+				React.createElement("div", null, React.createElement("img", {src: ""})), 
 				React.createElement("p", null, "Lockit is a mobile and web app couple that together helps you manage your thoughts and ideas")
 			)
 		);

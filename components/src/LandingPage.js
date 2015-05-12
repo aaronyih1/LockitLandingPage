@@ -102,7 +102,7 @@ var WhatItIs = React.createClass({
 	render: function(){
 		return(
 			<section >
-				<div><img src=""/></div>
+				<div><img src="https://download.unsplash.com/photo-1430132594682-16e1185b17c5"/></div>
 				<p>Lockit is a mobile and web app couple that together helps you manage your thoughts and ideas</p>
 			</section>
 		);
